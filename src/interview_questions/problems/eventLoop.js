@@ -1,3 +1,5 @@
+const fetch = require("node-fetch");
+
 console.log('Start');
 
 setTimeout(() => {
@@ -6,7 +8,7 @@ setTimeout(() => {
 
 setTimeout(() => {
   console.log('Callback2');
-}, 2000);
+}, 200);
 
 // document.getElementById('btn')
 // .addEventListener('click', () => {
@@ -17,8 +19,8 @@ setTimeout(() => {
 //   console.log(i);
 // }
 
-fetch('https://api.netflix.com').then(function cbF(result) {
-console.log(result);
+fetch('https://api.netflix.com').then(function cbF() {
+console.log('Netflix response!');
 });
 
 console.log('End');
