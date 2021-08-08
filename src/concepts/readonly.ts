@@ -6,7 +6,7 @@ interface Person {
 }
 
 // ✅ implicitely declaring a readonly arrays
-const x = [1,2,3,4,5] as const;
+const x2 = [1,2,3,4,5] as const;
 
 // ✅ explicitely declaring a readonly array
 const y: ReadonlyArray<{ x: number, y: number}> = [ {x: 1, y: 1}]
